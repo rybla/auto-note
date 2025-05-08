@@ -12,11 +12,11 @@
         gap: 1em;
 
         & > .categories-filler {
-            flex: 0 0 10em;
+            flex: 0 0 6em;
         }
         & > .categories {
             box-shadow: 0 0 0 0.1em black;
-            width: 10em;
+            width: 6em;
             height: 20em;
             overflow-y: scroll;
 
