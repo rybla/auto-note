@@ -1,0 +1,12 @@
+.App {
+    max-width: 50em;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.panel {
+    /* TODO */
+}

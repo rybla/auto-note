@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    /* background: linear-gradient(to bottom right, #90a0c0, #8090b0); */
+    background: linear-gradient(
+        to bottom right,
+        hsl(248deg 100% 98%),
+        hsl(260deg 100% 80%)
+    );
+    background-attachment: fixed;
+}

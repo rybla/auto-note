@@ -1,0 +1,36 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "http-server docs",
+    "build": "bun build ./src/index.html --outdir=docs --sourcemap --target=browser --minify"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@mozilla/readability": "^0.6.0",
+    "fast-xml-parser": "^5.2.2",
+    "html-entities": "^2.6.0",
+    "jsdom": "^26.1.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "rss-parser": "^3.13.0",
+    "sanitize-filename": "^1.6.3",
+    "turndown": "^7.2.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsdom": "^21.1.7",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/sanitize-filename": "^1.6.3",
+    "@types/turndown": "^5.0.5",
+    "@types/xml2js": "^0.4.14",
+    "http-server": "^14.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

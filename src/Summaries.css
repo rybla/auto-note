@@ -1,0 +1,91 @@
+.Summaries {
+    & > .title {
+        font-size: 2em;
+        padding: 1em;
+    }
+    & > .body {
+        padding: 1em;
+
+        & > .items {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            & > .item {
+                box-shadow: 0 0 0 0.1em black;
+                padding: 0.5em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+
+                & > .header {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2em;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    & > .title {
+                        display: block;
+                        border: 0.1em solid black;
+                        padding: 0.5em;
+
+                        text-decoration: none;
+                        color: black;
+                        background-color: rgba(0.1, 0.1, 255, 0.1);
+                        font-size: 1.2em;
+                        word-wrap: break-word;
+
+                        &:visited {
+                            background-color: purple;
+                        }
+                    }
+
+                    & > .feed_title {
+                        display: block;
+                        border: 1px solid black;
+                        padding: 0.5em;
+
+                        text-decoration: none;
+                        color: black;
+                        background-color: rgba(0.1, 0.1, 255, 0.1);
+                        font-size: 1.2em;
+                        word-wrap: break-word;
+
+                        &:visited {
+                            background-color: purple;
+                        }
+                    }
+                }
+
+                & > .subheader {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2em;
+                    align-items: center;
+
+                    & > .pubDate {
+                        flex: 0 0 auto;
+                    }
+
+                    & > .categories {
+                        flex: 1 1 auto;
+
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1em;
+                        justify-content: flex-end;
+                        flex-wrap: wrap;
+
+                        & > .category {
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                & > .summary {
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1">
+	<head>
+		<title>economics.opml</title>
+	</head>
+    <body>
+        <outline text="Marginal REVOLUTION" title="Marginal REVOLUTION" description="" type="rss" version="RSS" htmlUrl="https://marginalrevolution.com/" xmlUrl="http://feeds.feedburner.com/marginalrevolution/feed"/>
+    </body>
+</opml>
