@@ -1,6 +1,6 @@
 .App {
     max-width: 50em;
-    margin: auto;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .panel {
-    /* TODO */
+    flex: 1 1 auto;
 }
 
 .status {

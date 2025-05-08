@@ -1,15 +1,16 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
+html {
+    scrollbar-width: none;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+
     background: linear-gradient(
         to bottom right,
         hsl(248deg 100% 98%),
         hsl(260deg 100% 80%)
     );
     background-attachment: fixed;
-    overscroll-behavior-y: none;
+    overscroll-behavior: none;
 }
