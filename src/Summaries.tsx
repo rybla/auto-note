@@ -26,29 +26,34 @@ export default function Summaries(props: {}) {
       <div className="body">
         <div className="items">
           {items.map((item, i) => (
-            <div
-              key={`${item.title} (published ${item.pubDate})`}
-              className="item"
-            >
-              <div className="header">
-                <a className="title" href={item.link}>
-                  {item.title}
-                </a>
+            <>
+              <hr key={i} />
+              <div
+                key={`${item.title} (published ${item.pubDate})`}
+                className="item"
+              >
+                <div className="header">
+                  <a className="title" href={item.link}>
+                    {item.title}
+                  </a>
 
-                <a className="feed_title" href={item.feed_url}>
-                  {item.feed_title}
-                </a>
-              </div>
-              <div className="subheader">
-                <div className="pubDate">{item.pubDate}</div>
-                <div className="categories">
-                  {(item.categories ?? []).map((category) => (
-                    <div className="category">{category}</div>
-                  ))}
+                  <a className="feed_title" href={item.feed_url}>
+                    {item.feed_title}
+                  </a>
                 </div>
+                <div className="subheader">
+                  <div className="pubDate">{item.pubDate}</div>
+                  <div className="categories">
+                    {(item.categories ?? []).map((category) => (
+                      <div key={category} className="category">
+                        {category}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="summary">{item.summary}</div>
               </div>
-              <div className="summary">{item.summary}</div>
-            </div>
+            </>
           ))}
         </div>
       </div>
