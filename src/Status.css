@@ -1,0 +1,17 @@
+:root {
+    --status--color: red;
+}
+
+.Status {
+    margin: 1em;
+    border: 0.1em solid var(--status--color);
+    padding: 1em;
+    background: color-mix(in hsl, var(--status--color), transparent 80%);
+
+    .content {
+        filter: invert(1);
+        text-shadow: 0 0 0.2em
+            color-mix(in hsl, var(--status--color), transparent 30%);
+        color: white;
+    }
+}

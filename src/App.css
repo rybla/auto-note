@@ -10,3 +10,7 @@
 .panel {
     /* TODO */
 }
+
+.status {
+    border: 0.1em solid red;
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "http-server docs",
     "clean": "rm ./docs/index*",
-    "build": "bun run clean && bun build ./src/index.html --outdir=docs --sourcemap --target=browser --minify"
+    "build": "bun run clean; bun build ./src/index.html --outdir=docs --sourcemap --target=browser --minify"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

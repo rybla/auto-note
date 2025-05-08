@@ -3,10 +3,30 @@
         font-size: 2em;
         padding: 1em;
     }
+
     & > .body {
         padding: 1em;
 
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+
+        & > .categories-filler {
+            flex: 0 0 10em;
+        }
+        & > .categories {
+            box-shadow: 0 0 0 0.1em black;
+            width: 10em;
+            height: 20em;
+            overflow-y: scroll;
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+
         & > .items {
+            flex: 1 1 auto;
             display: flex;
             flex-direction: column;
             gap: 1em;
@@ -51,29 +71,14 @@
                     }
                 }
 
-                & > .subheader {
+                & > .pubDate {
+                }
+
+                & > .categories {
                     display: flex;
                     flex-direction: row;
-                    gap: 2em;
-                    /* align-items: center; */
-
-                    & > .pubDate {
-                        flex: 0 0 auto;
-                    }
-
-                    & > .categories {
-                        flex: 1 1 auto;
-
-                        display: flex;
-                        flex-direction: row;
-                        gap: 1em;
-                        justify-content: flex-end;
-                        flex-wrap: wrap;
-
-                        & > .category {
-                            font-style: italic;
-                        }
-                    }
+                    gap: 1em;
+                    flex-wrap: wrap;
                 }
 
                 & > .summary {
@@ -81,5 +86,20 @@
                 }
             }
         }
+    }
+}
+
+.category {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    user-select: none;
+
+    background-color: color-mix(in hsl, black, transparent 90%);
+
+    &.active {
+        background-color: color-mix(in hsl, green, transparent 50%);
+    }
+    &.inactive {
+        background-color: color-mix(in hsl, black, transparent 80%);
     }
 }
